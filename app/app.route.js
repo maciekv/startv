@@ -1,12 +1,16 @@
 (function() {
+    'use strict';
     angular
         .module('myApp')
-        .config(['$stateProvider', '$urlRouterProvider', '$logProvider', '$localStorageProvider', 'RestangularProvider', 'envServiceProvider',
-            function appConfig($stateProvider, $urlRouterProvider, $logProvider, $localStorageProvider, RestangularProvider, envServiceProvider) {
+        .config(appConfig);
 
-                $urlRouterProvider.otherwise('/home');
-            }
-        ])
+    appConfig.$injector = ['$stateProvider', '$urlRouterProvider', '$logProvider', '$localStorageProvider', 'RestangularProvider', 'envServiceProvider'];
+
+    function appConfig($stateProvider, $urlRouterProvider, $logProvider, $localStorageProvider, RestangularProvider, envServiceProvider) {
+
+        $urlRouterProvider.otherwise('/home');
+    }
+
 })();
 
 

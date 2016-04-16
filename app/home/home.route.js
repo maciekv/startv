@@ -16,13 +16,13 @@
                     "topnav": {
                         // controller: 'HomeCtrl as homeCtrl',
                         templateUrl: 'home/topnav.tpl.html'
-                    },                    
+                    },
                     "main": {
                         controller: 'HomeCtrl as homeCtrl',
                         templateUrl: 'home/home.tpl.html'
                     },
                     "sidebar": {
-                       // controller: 'SidebarController as sidebarCtrl',
+                        // controller: 'SidebarController as sidebarCtrl',
                         templateUrl: 'home/sidebar.tpl.html',
                         resolve: {
 
@@ -37,4 +37,3 @@
 
     }
 })();
- 
