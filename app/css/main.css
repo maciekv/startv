@@ -1,0 +1,6 @@
+#main {
+  background: #333; }
+  #main a {
+    color: red;
+    -webkit-transition: color 0.3s linear;
+    transition: color 0.3s linear; }
